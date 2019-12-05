@@ -7,5 +7,6 @@
     "git-o": "git-o.js"
   },
   "author": "victor141516",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {}
 }
