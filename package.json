@@ -1,0 +1,11 @@
+{
+  "name": "git-o",
+  "version": "1.0.0",
+  "description": "Open your current git repo in the web",
+  "main": "git-o.js",
+  "bin": {
+    "git-o": "git-o.js"
+  },
+  "author": "victor141516",
+  "license": "ISC"
+}
