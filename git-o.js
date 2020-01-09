@@ -76,7 +76,7 @@ function showHelp(){
 
 async function main(args) {
     const section = args[0] ?  args[0].toLowerCase() : '';
-    const branch = await execP('git branch --list| grep \'*\' | awk \'{print $2}\'').then(({err, stdout}) => {
+    const branch = await execP('git rev-parse --abbrev-ref HEAD').then(({err, stdout}) => {
         if (err) throw "There was a problem running git command";
         return stdout.trim();
     }).catch(() => {throw "There was a problem running git command"});
