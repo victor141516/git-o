@@ -85,7 +85,7 @@ async function main(args) {
         if (err) throw "There was a problem running git command";
         return stdout.trim();
     }).catch(() => { throw "There was a problem running git command" });
-    let remoteHttp = ''
+    let remoteHttp = remoteUri;
     if (remoteUri.startsWith('git@')) {
         remoteHttp = remoteUri.replace('git@', 'https://')
     }
